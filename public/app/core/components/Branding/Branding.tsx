@@ -15,7 +15,7 @@ export interface BrandComponentProps {
 }
 
 const LoginLogo: FC<BrandComponentProps & { logo?: string }> = ({ className, logo }) => {
-  return <img className={className} src={`${logo ? logo : grafanaIconSvg}`} alt="Grafana" />;
+  return <img className={className} src={`${logo ? logo : grafanaIconSvg}`} alt="Embryo Dashboards" />;
 };
 
 const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
@@ -51,7 +51,7 @@ const LoginBackground: FC<BrandComponentProps> = ({ className, children }) => {
 };
 
 const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
-  return <img className={className} src={grafanaIconSvg} alt="Grafana" />;
+  return <img className={className} src={grafanaIconSvg} alt="Embryo Dashboards" />;
 };
 
 export function HomeLogo({ homeNav, onClick }: { homeNav?: NavModelItem; onClick?: () => void }) {
@@ -147,8 +147,8 @@ export class Branding {
   static LoginBackground = LoginBackground;
   static MenuLogo = MenuLogo;
   static LoginBoxBackground = LoginBoxBackground;
-  static AppTitle = 'Grafana';
-  static LoginTitle = 'Welcome to Grafana';
+  static AppTitle = 'Embryo Dashboards';
+  static LoginTitle = 'Welcome to Embryo Dashboards';
   static HideEdition = false;
   static GetLoginSubTitle = (): null | string => {
     return null;
